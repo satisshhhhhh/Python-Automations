@@ -7,7 +7,21 @@ import re
 
 #Text containing email's and phone number to be pasted from clipboard
 text = str(pyperclip.paste())
+#Don't know how to navigate to clipboard?
+"""
+WINDOWS Users - To get to your clipboard history at any time, press Windows logo key + V. 
+    You can also paste and pin frequently used items by choosing an individual item from your clipboard menu.
+    To share your clipboard items across your Windows 10 devices, select Start > Settings > System > Clipboard.
 
+MAC OS Users - You can find the Command key immediately left of your keyboard's space bar.
+    When you select some text or an item on a Mac, pressing Command-C copies it to the clipboard, 
+    where it will remain until you either copy it over with another item or selection or restart your Mac.
+
+Linux Users - Incidentally, most of the time, if you want to Copy, Paste, and Cut, you use Ctrl-C, Ctrl-V, 
+    and Ctrl-X respectively. If you're working in Bash at the command line, the shortcuts are 
+    Shift-Ctrl-C, Shift-Ctrl-V, and Shift-Ctrl-X respectively.
+
+"""
 #Regular expression for phone numbers
 
 phone_regex = re.compile(r'''(
